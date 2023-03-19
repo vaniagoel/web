@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF - 8">
+        <meta http-equiv="X-UA-Compatible" content="IE edge">
+        <meta name="viewport" content="width-device-width,initial-scale=1.0">
+        <title>Vania</title>
+        <<link rel="stylesheet" href="style.css">>
+    </head>
+    <body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <ul>
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">Blog</a></li>
+
+                </ul>
+            </nav>
+        </div> 
+            <div class="header-text">
+            <h1>Hi, I am Vania Goel</h1>
+        </div>
+     
+</div>
+<div id="about">
+    <div class="hihi">
+        <div class="row"> 
+            
+                
+                
+                <style>
+                    * {
+                      box-sizing: border-box;
+                    }
+
+                    .column {
+                      float: left;
+                      width: 50%;
+                      padding: 10px;
+                      height: 1000px; 
+                      margin-left: 40%;
+                      border-radius:10px; 
+                    }
+
+                    .sub-title{
+                       
+                        margin-bottom: 25px;
+                    }
+                    .row{
+                        margin: auto;
+                        width: 50%;
+                        padding: 10px;
+                    }
+
+
+                    </style>
+                    </head>
+                    <body>
+                    
+                    
+                    <div class="row">
+                        <h1 class="sub-title">About me</h1>
+                        <p>Hey there! My name is Vania Goel.
+                            I am a high school student living in Mumbai. 
+                            This website is a personal development project. I am looking forward to post the blogs I write over here! </p>
+                            <div class="tab-titles"> 
+                                <p class="tab-links active-link" onclick="opentab('Hobbies')">Hobbies</p>
+                            </div>
+                                <div class="tab-contents active-tab" id="Hobbies:">
+                                    <ul>
+                                        <li><span></span>Reading</li>
+                                        <li><span></span>Drumming</li>
+                                        <li><span></span>Dancing</li>
+                                    </ul>       
+                                </div>
+        </div>
+    </div>
+</div>
+
+
+<div id="portfolio">
+    <div class="container">
+        <div class="work-list">
+            <h1 class="sub-title">Blog</h1>
+            <div class="work">
+            
+                <h3>Blog 1</h3>
+                <a href="vaniagoel.github.io./blog1/blog1">link text</a>
+            </div>
+            <div class="hi">
+                
+                    <h3>Blog 2</h3>
+                    <a href="#"><i class=""> </i></a>
+                </div>
+                <div class="bye">
+                    
+                        <h3>Blog 3</h3>
+                        <a href="#"><i class=""> </i></a>
+                    </div>
+            </div>
+    </div>
+
+    </div>
+</div>
+
+<script>
+    var tablinks= document.getElementByClassName("tab-links");
+    var tabcontents= document.getElementByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-link");
+            }    
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");   
+    }
+    
+</script>
+</body>
+</html>
